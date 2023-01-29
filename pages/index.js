@@ -1,7 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
+// import { lazy } from "react";
+// import Link from "next/link";
+import Main from "../components/Main";
+// import Navigation from "../components/Navigation";
 import styles from "../styles/Home.module.scss";
+
+// const MainPreview = lazy(() => import("../components/Main"));
 
 export default function Home() {
   return (
@@ -15,16 +20,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className={styles.header}>
+      {/* <Navigation /> */}
+      {/* <header className={styles.header}>
         <nav className={styles.nav}>
           <Link href="/">Home</Link>
-          <Link href="/about.js">About Me</Link>
-          <Link href="/portfolio.js">Portfolio</Link>
-          <Link href="/github.js">Github</Link>
+          <Link href="/about">About Me</Link>
+          <Link href="/portfolio">Portfolio</Link>
+          <Link href="/github">Github</Link>
         </nav>
-      </header>
-
-      <main className={styles.main}>
+      </header> */}
+      {/* <MainPreview /> */}
+      <Main />
+      {/* <main className={styles.main}>
         <div className={styles.about}>
           <h2>Basic Facts</h2>
           <p>2018</p>
@@ -37,7 +44,7 @@ export default function Home() {
           <h1>Angie Rodriguez</h1>
           <p>Front End Software Engineer based around Portland, OR.</p>
         </div>
-      </main>
+      </main> */}
 
       <footer className={styles.footer}>
         <nav className={styles.nav}>
