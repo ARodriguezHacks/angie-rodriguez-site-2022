@@ -5,14 +5,18 @@ export default function Main() {
     <main className={styles.main}>
       <div className={styles.about}>
         <h2>Basic Facts</h2>
-        <p>2018</p>
+        <ul>
+          <li>2018 Moved to Pacifc Northwest</li>
+          <li>2018 Started my coding bootcamp</li>
+          <li>Graduated from said bootcamp</li>
+        </ul>
       </div>
       <div className={styles.skills}>
         <h2>Angie Rodriguez</h2>
         <p>Front End Software Engineer based around Portland, OR.</p>
       </div>
       <div>
-        <h1>Angie Rodriguez</h1>
+        <h1 className={styles.headingOne}>Angie Rodriguez</h1>
         <p>Front End Software Engineer based around Portland, OR.</p>
       </div>
     </main>

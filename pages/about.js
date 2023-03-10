@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+// incorporate using GraphQL ?
 export default function About() {
   return (
     <div>
