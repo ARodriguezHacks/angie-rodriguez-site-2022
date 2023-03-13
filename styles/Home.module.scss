@@ -17,7 +17,7 @@
 
 .nav {
   width: 50%;
-  height: 3rem;
+  // height: 3rem;
 
   .navList {
     display: flex;
@@ -51,8 +51,14 @@
 .container {
   animation-name: delayhomepageload;
   animation-duration: 2s;
-  position: absolute;
+  // position: absolute;
   width: 100%;
+}
+
+.mainMid {
+  background-color: hsl(181, 100%, 62%);
+  // height: 50px;
+  display: flex;
 }
 
 @keyframes delayhomepageload {
