@@ -43,6 +43,11 @@
   }
 }
 
+.about {
+  min-height: 100vh;
+  background-color: hsl(332deg 100% 62% / 54%);
+}
+
 .footer {
   background-color: rgb(255, 127, 244);
   height: 15vh;
@@ -50,14 +55,12 @@
 
 .container {
   animation-name: delayhomepageload;
-  animation-duration: 2s;
-  // position: absolute;
+  animation-duration: 1s;
   width: 100%;
 }
 
 .mainMid {
   background-color: hsl(181, 100%, 62%);
-  // height: 50px;
   display: flex;
 }
 
