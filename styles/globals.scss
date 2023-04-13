@@ -1,12 +1,16 @@
 @use "font_styles";
 
-*,
-*::before,
-*::after {
+html {
   box-sizing: border-box;
 }
 
-body {
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
   margin: 0;
+}
+
+body {
   font-family: font_styles.$font-fira-sans, sans-serif;
 }
