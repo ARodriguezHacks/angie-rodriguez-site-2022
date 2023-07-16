@@ -5,20 +5,27 @@ export default function Navigation() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <ul className={styles.navList}>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About Me</Link>
-          </li>
-          <li>
-            <Link href="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link href="/github">Github</Link>
-          </li>
-        </ul>
+        <div className={styles.navList}>
+          <ul>
+            <li className={styles.desktopHide}>Menu Mobile</li>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+          </ul>
+        </div>
+        <div className={styles.navList}>
+          <ul>
+            <li>
+              <Link href="/about">About Me</Link>
+            </li>
+            <li>
+              <Link href="/portfolio">Portfolio</Link>
+            </li>
+            <li>
+              <Link href="/github">Github</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );
