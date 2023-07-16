@@ -16,18 +16,6 @@
   font-family: font_styles.$font-fira-sans;
   font-size: fonts.$nav-links;
 
-  .mobileNavList {
-    ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-
-      li {
-        padding: 0.5rem 0;
-      }
-    }
-  }
-
   .navList {
     display: none;
   }
@@ -106,8 +94,8 @@
     display: flex;
     justify-content: space-between;
 
-    mobileNavList {
-      display: none;
+    .navList {
+      display: unset;
     }
 
     .navList,
