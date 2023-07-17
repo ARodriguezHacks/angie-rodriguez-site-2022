@@ -2,10 +2,21 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Button from "./Button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navigation() {
-  // const [mobileNav, setMobileNav] = useState(false);
+  console.log(styles);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  function toggleMobileNav() {
+    setMobileNavOpen(!mobileNavOpen);
+  }
+
+  useEffect(() => {
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      setMobileNavOpen(false);
+    }
+  }, [mobileNavOpen]);
 
   return (
     <header className={styles.header}>
@@ -13,7 +24,7 @@ export default function Navigation() {
         <div className={styles.navListLogo}>
           <ul>
             <li className={`${styles.tabletHide} ${styles.desktopHide}`}>
-              <Button>
+              <Button toggleMobileNav={toggleMobileNav}>
                 <Image
                   src="/icons/menu.png"
                   alt="hamburger menu icon"
@@ -27,7 +38,14 @@ export default function Navigation() {
             </li>
           </ul>
         </div>
-        <div className={styles.navList}>
+
+        <div
+          className={
+            mobileNavOpen
+              ? `${styles.mobileNavListOpened}`
+              : `${styles.desktopNavListOpened}`
+          }
+        >
           <ul>
             <li>
               <Link href="/about">About Me</Link>

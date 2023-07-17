@@ -1,6 +1,3 @@
-export default function Button({ children }) {
-  function handleClick() {
-    alert("You clicked me!");
-  }
-  return <button onClick={handleClick}>{children}</button>;
+export default function Button({ toggleMobileNav, children }) {
+  return <button onClick={toggleMobileNav}>{children}</button>;
 }
