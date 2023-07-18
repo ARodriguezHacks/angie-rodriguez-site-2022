@@ -13,9 +13,11 @@ export default function Navigation() {
   }
 
   useEffect(() => {
-    if (window.matchMedia("(min-width: 768px)").matches) {
-      setMobileNavOpen(false);
-    }
+    window.addEventListener("resize", () => {
+      if (window.screen.width >= 768 && mobileNavOpen) {
+        setMobileNavOpen(false);
+      }
+    });
   }, [mobileNavOpen]);
 
   return (
