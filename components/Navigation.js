@@ -5,20 +5,25 @@ import Button from "./Button";
 import { useState, useEffect } from "react";
 
 export default function Navigation() {
-  console.log(styles);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  const handleScreenResize = function () {
+    if (window.screen.width >= 768 && mobileNavOpen) {
+      setMobileNavOpen(false);
+    }
+  };
 
   function toggleMobileNav() {
     setMobileNavOpen(!mobileNavOpen);
   }
 
   useEffect(() => {
-    window.addEventListener("resize", () => {
-      if (window.screen.width >= 768 && mobileNavOpen) {
-        setMobileNavOpen(false);
-      }
-    });
-  }, [mobileNavOpen]);
+    window.addEventListener("resize", handleScreenResize);
+
+    return function clean() {
+      window.removeEventListener("resize", handleScreenResize);
+    };
+  });
 
   return (
     <header className={styles.header}>

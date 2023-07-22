@@ -1,4 +1,4 @@
-@use "font_styles";
+@use "./abstracts/variables";
 
 html {
   box-sizing: border-box;
@@ -12,5 +12,5 @@ html {
 }
 
 body {
-  font-family: font_styles.$font-fira-sans, sans-serif;
+  font-family: variables.$font-fira-sans, sans-serif;
 }
