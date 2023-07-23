@@ -1,20 +1,26 @@
-@use "fonts";
-@use "font_styles";
-// @use "variables";
+@use "./abstracts/variables";
+@use "./base/fonts";
+@use "./abstracts/mixins";
 
 // Headings
 .headingOne {
-  font-size: fonts.$heading-one;
+  font-size: variables.$heading-one;
 }
 
 .header {
   background-color: aquamarine;
 }
 
+// Flex
+.sectionFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+// Navigation component?.
 .nav {
   width: 100%;
-  font-family: font_styles.$font-fira-sans;
-  font-size: fonts.$nav-links;
+  font-size: variables.$nav-links;
 
   .navList {
     display: none;
@@ -28,9 +34,8 @@
     display: unset;
 
     ul {
-      padding: 0.75rem;
-      list-style: none;
-      display: flex;
+      @include mixins.flex-nav-list();
+
       flex-direction: column;
 
       li {
@@ -48,7 +53,7 @@
   flex-wrap: wrap;
 
   > * {
-    flex: 1 0 33%;
+    flex: 1 0 100%;
   }
 }
 
@@ -93,6 +98,9 @@
   }
 }
 
+// Media Queries:
+
+// Tablet, Desktop, and above
 @media (min-width: 768px) {
   .mobileHide {
     display: unset;
@@ -123,9 +131,7 @@
     .desktopNavListOpened,
     .navListLogo {
       ul {
-        padding: 0.75rem;
-        list-style: none;
-        display: flex;
+        @include mixins.flex-nav-list();
         flex-direction: row;
         align-items: center;
 
@@ -134,5 +140,9 @@
         }
       }
     }
+  }
+
+  .sectionFlex {
+    flex-direction: row;
   }
 }
