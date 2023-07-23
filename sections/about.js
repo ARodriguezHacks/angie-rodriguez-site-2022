@@ -1,8 +1,8 @@
-import Button from "../components/Button";
 import styles from "../styles/Home.module.scss";
-export default function About({ styles }) {
+
+export default function About() {
   return (
-    <div className={styles} id="about">
+    <div className={`${styles.sectionFlex} ${styles.about}`} id="about">
       <div>
         <picture></picture>
       </div>

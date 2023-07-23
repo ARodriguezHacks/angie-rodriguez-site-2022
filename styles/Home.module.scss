@@ -1,7 +1,6 @@
 @use "./abstracts/variables";
 @use "./base/fonts";
-// @use "./base/typography";
-// @use "variables";
+@use "./abstracts/mixins";
 
 // Headings
 .headingOne {
@@ -12,9 +11,15 @@
   background-color: aquamarine;
 }
 
+// Flex
+.sectionFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+// Navigation component?.
 .nav {
   width: 100%;
-  font-family: variables.$font-fira-sans;
   font-size: variables.$nav-links;
 
   .navList {
@@ -29,9 +34,8 @@
     display: unset;
 
     ul {
-      padding: 0.75rem;
-      list-style: none;
-      display: flex;
+      @include mixins.flex-nav-list();
+
       flex-direction: column;
 
       li {
@@ -94,6 +98,9 @@
   }
 }
 
+// Media Queries:
+
+// Tablet, Desktop, and above
 @media (min-width: 768px) {
   .mobileHide {
     display: unset;
@@ -124,9 +131,7 @@
     .desktopNavListOpened,
     .navListLogo {
       ul {
-        padding: 0.75rem;
-        list-style: none;
-        display: flex;
+        @include mixins.flex-nav-list();
         flex-direction: row;
         align-items: center;
 
@@ -135,5 +140,9 @@
         }
       }
     }
+  }
+
+  .sectionFlex {
+    flex-direction: row;
   }
 }
