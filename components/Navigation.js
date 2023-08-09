@@ -33,12 +33,7 @@ export default function Navigation() {
           <ul>
             <li className={`${styles.tabletHide} ${styles.desktopHide}`}>
               <Button toggleMobileNav={toggleMobileNav}>
-                <Image
-                  src="/icons/menu.png"
-                  alt="hamburger menu icon"
-                  width="32"
-                  height="32"
-                />
+                <Image src={Logo} alt="logo" width={100} height={100} />
               </Button>
             </li>
             <li className={styles.mobileHide}>
