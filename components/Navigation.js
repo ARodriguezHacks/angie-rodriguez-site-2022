@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Button from "./Button";
 import { useState, useEffect } from "react";
+import Logo from "../public/Print_Transparent-2.svg";
 
 export default function Navigation() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -41,7 +42,9 @@ export default function Navigation() {
               </Button>
             </li>
             <li className={styles.mobileHide}>
-              <Link href="/">Home</Link>
+              <Link href="/">
+                <Image src={Logo} alt="logo" width={100} height={100} />
+              </Link>
             </li>
           </ul>
         </div>
