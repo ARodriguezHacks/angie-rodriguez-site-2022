@@ -15,15 +15,8 @@ export default function About() {
           style={{ objectFit: "cover", opacity: 0.5 }}
         />
       </div>
-      <div style={{ zIndex: 2, display: "flex", width: "100%" }}>
-        <div
-          style={{
-            flex: "1 0 50%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
+      <div className={styles.aboutFlexContainer}>
+        <div className={styles.aboutCopy}>
           <p>Welcome!</p>
           <h1>
             <span>My name is</span> Angie Rodriguez
@@ -43,14 +36,7 @@ export default function About() {
             <Link href="/about">Read more about my journey</Link>
           </button>
         </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flex: "1 0 50%",
-          }}
-        >
+        <div className={styles.aboutProfileImage}>
           <div style={{ boxShadow: "10px 5px 5px red" }}>
             <Image
               src={profilePic}
