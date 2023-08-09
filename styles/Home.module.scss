@@ -47,7 +47,7 @@
 
 .main {
   min-height: 100vh;
-  background-color: hsl(60, 100%, 62%);
+  // background-color: hsl(60, 100%, 62%);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -57,10 +57,15 @@
   }
 }
 
-.about {
-  min-height: 100vh;
-  background-color: hsl(332deg 100% 62% / 54%);
+.about,
+.github,
+.portfolio {
+  min-height: 70vh;
 }
+
+// .about {
+//   // background-color: hsl(332deg 100% 62% / 54%);
+// }
 
 .footer {
   background-color: rgb(255, 127, 244);
