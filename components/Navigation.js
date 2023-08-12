@@ -2,7 +2,19 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Button from "./Button";
-import { useState, useEffect } from "react";
+import { useState, useEffect, forwardRef } from "react";
+import Logo from "../public/Print_Transparent-2.svg";
+
+
+const MyImageLink = forwardRef(({ onClick, href }, ref) => {
+  // displayName: 'Hello',
+  return (
+    <a href={href} onClick={onClick} ref={ref}>
+      <Image src={Logo} alt="logo" width={100} height={100} />
+    </a>
+  )
+})
+MyImageLink.displayName = "MyImageLink"
 
 export default function Navigation() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -32,16 +44,13 @@ export default function Navigation() {
           <ul>
             <li className={`${styles.tabletHide} ${styles.desktopHide}`}>
               <Button toggleMobileNav={toggleMobileNav}>
-                <Image
-                  src="/icons/menu.png"
-                  alt="hamburger menu icon"
-                  width="32"
-                  height="32"
-                />
+                <Image src={Logo} alt="logo" width={100} height={100} />
               </Button>
             </li>
             <li className={styles.mobileHide}>
-              <Link href="/">Home</Link>
+              <Link href="/" passHref legacyBehavior>
+                <MyImageLink />
+              </Link>
             </li>
           </ul>
         </div>

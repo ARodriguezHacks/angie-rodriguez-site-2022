@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
           name="description"
           content="Angie Rodriguez Software Engineer website"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo-favicon.ico" />
       </Head>
       <Main />
       <section>
