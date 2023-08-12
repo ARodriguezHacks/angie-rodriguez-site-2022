@@ -2,27 +2,15 @@ import styles from "../styles/Home.module.scss";
 
 export default function Portfolio() {
   return (
-    <div className={`${styles.sectionFlex} ${styles.portfolio}`} id="portfolio">
+    <div className={`${styles.sectionFlex} ${styles.portfolio} ${styles.pageMargin}`} id="portfolio">
       <div>
-        <picture></picture>
-      </div>
-      <div>
-        <p>Welcome!</p>
-        <h1>
-         Portfolio
-        </h1>
-        <p>
-          I&apos;m a software engineer based in the PNW. I love working in
-          React.js, TypeScript and more.
-        </p>
-        <p>Personal Timeline:</p>
+        <h2 className={styles.headingOne}>My Work History</h2>
         <ul>
-          <li>2018 Moved to the Pacific Northwest</li>
-          <li>2018 Started my coding bootcamp</li>
-          <li>2019 Graduated from bootcamp</li>
-          <li>2021 Secured first full-time developer role</li>
+          <li>2021 - 2023: Aisle Rocket</li>
+          <li>2020 - 2021: Gold Leaf Settlement Solutions (Contract)</li>
+          <li>2020 - 2021: WORKPLACE21 (Contract)</li>
+          <li>2020 - 2021: Code for PDX</li>
         </ul>
-        <button>Read more about my journey</button>
       </div>
     </div>
   );

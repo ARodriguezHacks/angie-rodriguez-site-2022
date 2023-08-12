@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 
 export default function Github() {
   const [data, setData] = useState(null)
-  const [isLoading, setLoading] = useState(false)
-  console.log(data)
+  const [isLoading, setLoading] = useState(true)
+  // console.log(data)
 
   useEffect(() => {
     setLoading(true)
@@ -22,8 +22,8 @@ export default function Github() {
     getData()
   }, [])
 
-  if (isLoading) return <p>Loading...</p>
-  if (!data) return <p>No profile data</p>
+  if (isLoading && !data) return <p>Loading...</p>
+  if (!isLoading && !data) return <p>No profile data</p>
 
   return (
     <div>
