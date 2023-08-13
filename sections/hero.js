@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div className={`${styles.sectionFlex} ${styles.about} ${styles.pageMargin}`} id="about">
       <div className={styles.aboutFlexContainer}>
-        <div className={styles.aboutCopy}>
+        <div className={styles.heroCopy}>
           <p>Welcome!</p>
           <h1 className={styles.headingOne}>
             <span>My name is</span> Angie Rodriguez
@@ -18,7 +18,7 @@ export default function Hero() {
             React.js, TypeScript and more.
           </p>
         </div>
-        <div className={styles.aboutProfileImage}>
+        <div className={styles.heroProfileImage}>
           <div style={{ boxShadow: "0px 0px 10px gray" }}>
             <Image
               src={profilePic}

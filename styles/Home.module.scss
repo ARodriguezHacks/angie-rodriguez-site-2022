@@ -2,13 +2,58 @@
 @use "./base/fonts";
 @use "./abstracts/mixins";
 
+.timeline {
+  position: relative;
+  // max-width: 1200px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #a5a1eb;
+    top: 15px;
+    bottom: 15px;
+    // left: 50%;
+    margin-left: -7px;
+  }
+}
+
+.timelineContainer {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  // width: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -16px;
+    background-color: #21d4fe;
+    border: 4px solid #21d4fe;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
 // Headings
 .headingOne {
   font-size: variables.$heading-one;
 }
+// Hero Section Layout
 
 .heroParagraph {
   font-size: variables.$hero-paragraph;
+}
+
+.heroCopy {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header {
@@ -65,29 +110,32 @@
   padding: 0 20px;
 }
 
+.hero,
 .about,
 .github,
 .portfolio {
-  min-height: 70vh;
+  min-height: 100vh;
 }
 
 .aboutFlexContainer {
   z-index: 2;
   display: flex;
+  justify-content: space-between;
   width: 100%;
 
   .aboutCopy {
-    flex: 1 0 50%;
+    flex: 0 0 45%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
+  .heroProfileImage,
   .aboutProfileImage {
-    flex: 1 0 50%;
+    flex: 0 0 45%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
   }
 
   @media (max-width: 767px) {
