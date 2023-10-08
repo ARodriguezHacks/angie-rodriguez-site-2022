@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Timeline from "../components/Timeline"
 // import backgroundPic from "../public/images/background.jpg";
-import profilePic from "../public/images/cropped.png";
+import profilePic from "../public/images/AngieR_profile_min_2.png";
 
 export default function About() {
   return (
@@ -16,12 +16,13 @@ export default function About() {
           <p>I&apos;m a former liberal arts major who discovered web design around 2016. Since then I&apos;m embarked on a lengthy journey to change careers and discover more of myself along the way.</p><br />
           <p>When I&apos;m not learning software engineering I love reading novels, playing with my cats Maggie and Thunder and jamming to video game music.</p>
           <div className={styles.aboutProfileImage}>
-            <div style={{ boxShadow: "0px 0px 10px gray" }}>
+            <div style={{ boxShadow: "0px 0px 10px gray" }} className={styles.heroProfileImageWrapper}>
               <Image
                 src={profilePic}
                 alt="Angie Rodriguez profile pic"
                 width="300vw"
                 height="300vw"
+                fill={true}
               />
             </div>
           </div>
