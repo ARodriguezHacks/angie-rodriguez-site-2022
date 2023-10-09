@@ -23,10 +23,8 @@ export default function Hero() {
             <Image
               src={profilePic}
               alt="Angie Rodriguez profile pic"
-              width="500vw"
-              height="500vw"
-              // style={{ display: 'block' }}
-              fill={true}
+              width={500}
+              height={500}
             />
           </div>
         </div>

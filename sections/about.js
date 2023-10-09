@@ -20,9 +20,8 @@ export default function About() {
               <Image
                 src={profilePic}
                 alt="Angie Rodriguez profile pic"
-                width="300vw"
-                height="300vw"
-                fill={true}
+                width={300}
+                height={300}
               />
             </div>
           </div>
