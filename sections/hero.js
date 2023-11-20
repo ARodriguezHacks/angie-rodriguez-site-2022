@@ -6,7 +6,7 @@ import profilePic from "../public/images/AngieR_profile_min_2.png";
 
 export default function Hero() {
   return (
-    <div className={`${styles.sectionFlex} ${styles.about} ${styles.pageMargin}`} id="about">
+    <div className={`${styles.sectionFlex} ${styles.about} ${styles.pageMargin}`} id="hero">
       <div className={styles.aboutFlexContainer}>
         <div className={styles.heroCopy}>
           <p>Welcome!</p>
@@ -19,12 +19,13 @@ export default function Hero() {
           </p>
         </div>
         <div className={styles.heroProfileImage}>
-          <div style={{ boxShadow: '10px 10px 10px gray' }} className={styles.heroProfileImageWrapper}>
+          <div>
             <Image
               src={profilePic}
               alt="Angie Rodriguez profile pic"
               width={500}
               height={500}
+              style={{ boxShadow: '10px 10px 10px gray' }}
             />
           </div>
         </div>
