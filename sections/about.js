@@ -16,12 +16,13 @@ export default function About() {
           <p>I&apos;m a former liberal arts major who discovered web design around 2016. Since then I&apos;m embarked on a lengthy journey to change careers and discover more of myself along the way.</p><br />
           <p>When I&apos;m not learning software engineering I love reading novels, playing with my cats Maggie and Thunder and jamming to video game music.</p>
           <div className={styles.aboutProfileImage}>
-            <div style={{ boxShadow: "0px 0px 10px gray" }} className={styles.heroProfileImageWrapper}>
+            <div>
               <Image
                 src={profilePic}
                 alt="Angie Rodriguez profile pic"
                 width={300}
                 height={300}
+                style={{ boxShadow: '10px 10px 10px gray' }}
               />
             </div>
           </div>
