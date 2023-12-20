@@ -1,0 +1,12 @@
+.footerNav {
+  height: 100%;
+  ul.navList {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+  }
+}

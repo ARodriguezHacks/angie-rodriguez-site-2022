@@ -4,7 +4,6 @@
 
 .timeline {
   position: relative;
-  // max-width: 1200px;
   margin: 0 auto;
 
   &::before {
@@ -14,7 +13,6 @@
     background-color: #a5a1eb;
     top: 15px;
     bottom: 15px;
-    // left: 50%;
     margin-left: -7px;
   }
 }
@@ -23,7 +21,6 @@
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  // width: 50%;
 
   &::before {
     content: "";
@@ -96,7 +93,6 @@
 
 .main {
   min-height: 100vh;
-  // background-color: hsl(60, 100%, 62%);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -152,9 +148,14 @@
   }
 }
 
-// .about {
-//   // background-color: hsl(332deg 100% 62% / 54%);
-// }
+.githubFlexContainer {
+  max-width: 100%;
+  flex-wrap: wrap;
+
+  .githubProject {
+    width: 50%;
+  }
+}
 
 .footer {
   background-color: rgb(255, 127, 244);
@@ -239,4 +240,6 @@
   .sectionFlex {
     flex-direction: row;
   }
+
+
 }

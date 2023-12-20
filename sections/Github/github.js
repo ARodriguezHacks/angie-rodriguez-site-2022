@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import Image from "next/image";
-// import backgroundPic from "../public/images/background.jpg";
-import profilePic from "../public/images/AngieR_profile_min_2.png";
-import styles from "../styles/Home.module.scss";
+import profilePic from "../../public/images/AngieR_profile_min_2.png";
+import styles from "../../styles/Home.module.scss";
 
 export default function Github() {
   const [data, setData] = useState(null)
@@ -35,9 +34,9 @@ export default function Github() {
         <h2 className={ styles.headingOne }>
           Check out my latest Github Works
         </h2>
-        <div>
+        <div className={`${styles.sectionFlex} ${styles.githubFlexContainer}`}>
           { data.map(dataItem => (
-            <div key={ dataItem.id }>
+            <div key={ dataItem.id } className={`${styles.githubProject}`}>
               <div className={ styles.heroProfileImage }>
                 <div>
                   <Image

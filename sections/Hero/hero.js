@@ -1,8 +1,8 @@
-import styles from "../styles/Home.module.scss";
-import Link from "next/link";
+import styles from "../../styles/Home.module.scss";
+// import Link from "next/link";
 import Image from "next/image";
 // import backgroundPic from "../public/images/background.jpg";
-import profilePic from "../public/images/AngieR_profile_min_2.png";
+import profilePic from "../../public/images/AngieR_profile_min_2.png";
 
 export default function Hero() {
   return (
