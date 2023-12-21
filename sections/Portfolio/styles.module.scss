@@ -1,0 +1,11 @@
+.portfolio {
+  .sectionFlex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .imageContainer {
+    position: relative
+  }
+}

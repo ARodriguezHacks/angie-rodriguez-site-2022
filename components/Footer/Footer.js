@@ -29,6 +29,10 @@ export default function Footer() {
           </a></li>
         </ul>
       </nav>
+      <div className={ footerStyles.signature }>
+        <p className={ footerStyles.copyright }><small>Copyright &copy;2023 Angie Rodriguez</small></p>
+        <p>Made with love and lots of coffee</p>
+      </div>
     </footer>
   );
 }
