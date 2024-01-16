@@ -11,18 +11,18 @@ export default function Portfolio() {
       <div>
         <h2 className={ styles.headingOne }>My Favorite Projects</h2>
         { projectData.map(dataItem => (
-          <div key={ dataItem.name } className={ `${styles.githubProject} ${portfolioStyles.sectionFlex}` }>
-            <div className={ `${styles.heroProfileImage} ${portfolioStyles.imageContainer}` }>
+          <div key={ dataItem.name } className={ `${styles.githubProject} ${portfolioStyles.sectionPortfolioFlex}` } style={ { minHeight: "100vh" } }>
+            <div className={ `${styles.heroProfileImage} ${portfolioStyles.imageContainer}` } >
               <Image
                 src={ dataItem.image }
                 alt={ dataItem.description }
-                // fill={true}
+                // fill
                 width={ 850 }
                 height={ 500 }
                 style={ { boxShadow: '10px 10px 10px gray' } }
               />
             </div>
-            <div>
+            <div className={ `${portfolioStyles.textContainer}` }>
               <h3>{ dataItem.name }</h3>
               <p>{ dataItem.description }</p>
             </div>
