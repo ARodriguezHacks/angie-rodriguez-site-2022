@@ -8,7 +8,7 @@
   .imageContainer {
     position: relative;
 
-    @media (max-width: 1439px) {
+    @media (max-width: 1440px) {
       margin: 0 auto;
     }
   }
@@ -16,16 +16,18 @@
 
 .sectionPortfolioFlex {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 
   .textContainer {
-    order: -1;
+    order: 0;
   }
-  @media (min-width: 1440px) {
-    flex-direction: row;
+
+  @media (max-width: 1440px) {
+    flex-direction: column;
 
     .textContainer {
-      order: 0;
+      order: -1;
     }
   }
 

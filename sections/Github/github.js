@@ -31,28 +31,29 @@ export default function Github() {
 
   return (
     <div className={ `${styles.sectionFlex} ${styles.github} ${styles.pageMargin} ${githubStyles.github}` } id="github">
-
-      <h2 className={ styles.headingOne }>
-        Check out my latest Github Works
-      </h2>
-      <div className={ `${styles.sectionFlex} ${styles.githubFlexContainer} ${githubStyles.container}` }>
-        { data.map(dataItem => (
-          <div key={ dataItem.id } className={ styles.githubProject }>
-            <div className={ styles.heroProfileImage }>
-              <Image
-                src={ profilePic }
-                alt="Angie Rodriguez profile pic"
-                width={ 250 }
-                height={ 250 }
-                style={ { boxShadow: '10px 10px 10px gray' } }
-              />
+      <div>
+        <h2 className={ styles.headingOne }>
+          Check out my latest Github Works
+        </h2>
+        <div className={ `${styles.sectionFlex} ${styles.githubFlexContainer} ${githubStyles.container}` }>
+          { data.map(dataItem => (
+            <div key={ dataItem.id } className={ styles.githubProject }>
+              <div className={ styles.heroProfileImage }>
+                <Image
+                  src={ profilePic }
+                  alt="Angie Rodriguez profile pic"
+                  width={ 250 }
+                  height={ 250 }
+                  style={ { boxShadow: '10px 10px 10px gray' } }
+                />
+              </div>
+              <div className={ githubStyles.content }>
+                <h3>{ dataItem.name }</h3>
+                <p>{ dataItem.description }</p>
+              </div>
             </div>
-            <div className={ githubStyles.content }>
-              <h3>{ dataItem.name }</h3>
-              <p>{ dataItem.description }</p>
-            </div>
-          </div>
-        )) }
+          )) }
+        </div>
       </div>
     </div>
   );
