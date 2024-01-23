@@ -6,7 +6,7 @@ import profilePic from "../../public/images/AngieR_profile_min_2.png";
 
 export default function Hero() {
   return (
-    <div className={ `${styles.sectionFlex} ${styles.about} ${styles.pageMargin}` } id="hero">
+    <div className={ `${styles.sectionFlex} ${styles.hero} ${styles.pageMargin}` } id="hero">
       <div className={ styles.aboutFlexContainer }>
         <div className={ styles.heroCopy }>
           <p>Welcome!</p>

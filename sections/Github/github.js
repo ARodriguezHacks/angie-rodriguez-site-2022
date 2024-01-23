@@ -30,7 +30,7 @@ export default function Github() {
   if (!isLoading && !data) return <p>No profile data</p>
 
   return (
-    <div className={ `${styles.sectionFlex} ${styles.github} ${styles.pageMargin} ${githubStyles.github}` } id="github">
+    <div className={ `${githubStyles.sectionFlex} ${styles.github} ${styles.pageMargin} ${githubStyles.github}` } id="github">
       <div>
         <h2 className={ styles.headingOne }>
           Check out my latest Github Works
