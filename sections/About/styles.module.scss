@@ -1,32 +1,27 @@
-.heroFlexContainer {
+.aboutFlexContainer {
   z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
 
-  .heroCopy {
+  .aboutCopy {
     flex: 0 0 45%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 0 10px;
   }
 
-  .heroProfileImage,
   .aboutProfileImage {
-    .heroProfileImageWrapper {
-      span {
-        display: block !important;
-      }
-    }
-  }
-
-  .heroProfileImage {
-    flex: 0 0 45%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+
+
+    @media (min-width: 768px) {
+      padding: 20px;
+      flex: 0 0 45%;
+    }
   }
 
   @media (min-width: 1024px) {

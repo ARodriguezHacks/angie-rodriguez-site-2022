@@ -17,7 +17,7 @@
 .sectionPortfolioFlex {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   .textContainer {
     order: 0;
@@ -30,8 +30,4 @@
       order: -1;
     }
   }
-
-  // .textContainer {
-  //   order: 0;
-  // }
 }

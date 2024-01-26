@@ -8,7 +8,12 @@
     }
   }
 
-  .sectionFlex {
-    flex-direction: row;
+  .githubFlexContainer {
+    max-width: 100%;
+    flex-wrap: wrap;
+
+    .githubProject {
+      width: 50%;
+    }
   }
 }

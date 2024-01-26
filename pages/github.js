@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 export default function Github() {
   const [data, setData] = useState(null)
   const [isLoading, setLoading] = useState(true)
-  // console.log(data)
 
   useEffect(() => {
     setLoading(true)

@@ -2,12 +2,11 @@ import { useState, useEffect } from 'react';
 import Image from "next/image";
 import profilePic from "../../public/images/AngieR_profile_min_2.png";
 import styles from "../../styles/Home.module.scss";
-import githubStyles from "./github.module.scss"
+import githubStyles from "./styles.module.scss"
 
 export default function Github() {
   const [data, setData] = useState(null)
   const [isLoading, setLoading] = useState(true)
-  // console.log(data)
 
   useEffect(() => {
     setLoading(true)
@@ -30,12 +29,12 @@ export default function Github() {
   if (!isLoading && !data) return <p>No profile data</p>
 
   return (
-    <div className={ `${githubStyles.sectionFlex} ${styles.github} ${styles.pageMargin} ${githubStyles.github}` } id="github">
+    <div className={ `sectionFlex sectionHeight sectionMargin ${githubStyles.github}` } id="github">
       <div>
-        <h2 className={ styles.headingOne }>
+        <h2 className={ `headingOne`}>
           Check out my latest Github Works
         </h2>
-        <div className={ `${styles.sectionFlex} ${styles.githubFlexContainer} ${githubStyles.container}` }>
+        <div className={ `sectionFlex ${githubStyles.githubFlexContainer} ${githubStyles.container}` }>
           { data.map(dataItem => (
             <div key={ dataItem.id } className={ styles.githubProject }>
               <div className={ styles.heroProfileImage }>

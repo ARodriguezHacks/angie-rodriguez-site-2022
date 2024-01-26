@@ -7,7 +7,6 @@ import Logo from "../public/Print_Transparent-2.svg";
 
 
 const MyImageLink = forwardRef(({ onClick, href }, ref) => {
-  // displayName: 'Hello',
   return (
     <a href={href} onClick={onClick} ref={ref}>
       <Image src={Logo} alt="logo" width={100} height={100} />

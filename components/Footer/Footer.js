@@ -1,10 +1,8 @@
-// import Image from "next/image";
-import styles from "../../styles/Home.module.scss";
 import footerStyles from "./footer.module.scss"
 
 export default function Footer() {
   return (
-    <footer className={ styles.footer }>
+    <footer className={ footerStyles.footer }>
       <nav className={ footerStyles.footerNav }>
         <ul className={ footerStyles.navList }>
           <li className={ footerStyles.navListItem }><a className={ footerStyles.navListItemLink }
