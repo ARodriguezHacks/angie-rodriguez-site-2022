@@ -12,7 +12,13 @@
       @media (min-width: 1440px) {
         width: 40%;
       }
+    }
+  }
 
+  .sectionProjectHeight {
+    min-height: 75vh;
+    @media (min-width: 768px) {
+      min-height: 100vh;
     }
   }
 

@@ -8,7 +8,7 @@ export default function Portfolio() {
       <div>
         <h2 className={ `headingOne` }>My Favorite Projects</h2>
         { projectData.map(dataItem => (
-          <div key={ dataItem.name } className={ `${portfolioStyles.sectionPortfolioFlex}` } style={ { minHeight: "100vh" } }>
+          <div key={ dataItem.name } className={ `${portfolioStyles.sectionPortfolioFlex} ${portfolioStyles.sectionProjectHeight}` }>
             <div className={ `${portfolioStyles.portfolioCopy}` }>
               <h3>{ dataItem.name }</h3>
               <p>{ dataItem.description }</p>

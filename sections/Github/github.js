@@ -19,6 +19,7 @@ export default function Github() {
       }
       );
       const res = await data.json();
+      console.log(res)
       setData(res);
     }
     setLoading(false)
@@ -31,25 +32,18 @@ export default function Github() {
   return (
     <div className={ `sectionFlex sectionHeight sectionMargin ${githubStyles.github}` } id="github">
       <div>
-        <h2 className={ `headingOne`}>
+        <h2 className={ `headingOne` }>
           Check out my latest Github Works
         </h2>
         <div className={ ` ${githubStyles.githubFlexContainer} ${githubStyles.container}` }>
           { data.map(dataItem => (
             <div key={ dataItem.id } className={ githubStyles.githubProject }>
-              <div className={ githubStyles.heroProfileImage }>
-                <Image
-                  src={ profilePic }
-                  alt="Angie Rodriguez profile pic"
-                  width={ 250 }
-                  height={ 250 }
-                  style={ { boxShadow: '10px 10px 10px gray' } }
-                />
-              </div>
-              <div className={ githubStyles.content }>
-                <h3>{ dataItem.name }</h3>
-                <p>{ dataItem.description }</p>
-              </div>
+                <div className={ githubStyles.content }>
+                  <h3>Project: { dataItem.name }</h3>
+                  <p>Description: { dataItem.description ?? 'A project in the works'}</p>
+                  {dataItem.language ? <p>Languages: { dataItem.language}</p> : null}
+                  {dataItem.homepage ? <p>Homepage: { dataItem.homepage}</p> : null}
+                </div>
             </div>
           )) }
         </div>
