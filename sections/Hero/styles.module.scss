@@ -12,15 +12,6 @@
     justify-content: center;
   }
 
-  .heroProfileImage,
-  .aboutProfileImage {
-    .heroProfileImageWrapper {
-      span {
-        display: block !important;
-      }
-    }
-  }
-
   .heroProfileImage {
     flex: 0 0 45%;
     display: flex;

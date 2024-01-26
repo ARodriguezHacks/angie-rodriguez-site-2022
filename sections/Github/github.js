@@ -34,10 +34,10 @@ export default function Github() {
         <h2 className={ `headingOne`}>
           Check out my latest Github Works
         </h2>
-        <div className={ `sectionFlex ${githubStyles.githubFlexContainer} ${githubStyles.container}` }>
+        <div className={ ` ${githubStyles.githubFlexContainer} ${githubStyles.container}` }>
           { data.map(dataItem => (
-            <div key={ dataItem.id } className={ styles.githubProject }>
-              <div className={ styles.heroProfileImage }>
+            <div key={ dataItem.id } className={ githubStyles.githubProject }>
+              <div className={ githubStyles.heroProfileImage }>
                 <Image
                   src={ profilePic }
                   alt="Angie Rodriguez profile pic"

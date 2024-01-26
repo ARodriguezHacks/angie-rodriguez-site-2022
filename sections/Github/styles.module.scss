@@ -6,14 +6,28 @@
       max-width: 50%;
       margin: 0 auto;
     }
+
+    .heroProfileImage {
+      .heroProfileImageWrapper {
+        span {
+          display: block !important;
+        }
+      }
+    }
   }
 
   .githubFlexContainer {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     flex-wrap: wrap;
 
-    .githubProject {
-      width: 50%;
+    @media (min-width: 768px) {
+      flex-direction: row;
+
+      .githubProject {
+        width: 50%;
+      }
     }
   }
 }
