@@ -18,6 +18,33 @@
   margin: 0;
 }
 
-// body {
-//   font-family: variables.$font-fira-sans, sans-serif;
-// }
+// Headings
+.headingOne {
+  font-size: variables.$heading-one;
+}
+.heroParagraph {
+  font-size: variables.$hero-paragraph;
+}
+
+// Section styles
+.sectionFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHeight {
+  min-height: 100vh;
+}
+
+.sectionMargin {
+  padding: 0 10px 20px;
+}
+
+// Media Queries
+
+// Large Tablet/Small Laptop devices
+@media (min-width: 1024px) {
+  .sectionFlex {
+    flex-direction: row;
+  }
+}

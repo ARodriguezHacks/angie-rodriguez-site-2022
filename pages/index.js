@@ -1,20 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import Main from "../components/Main";
-import Footer from "../components/Footer";
-import styles from "../styles/Home.module.scss";
-import { getSortedPostsData } from "../lib/posts";
+import Footer from "../components/Footer/Footer";
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
     <>
       <Head>

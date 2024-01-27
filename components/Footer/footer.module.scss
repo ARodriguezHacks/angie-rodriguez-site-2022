@@ -1,0 +1,25 @@
+.footer {
+  background-color: rgb(255, 127, 244);
+}
+
+.footerNav {
+  padding: 10px 0;
+
+  ul.navList {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+  }
+}
+
+.signature {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to bottom, #ff7ff4 0%, #00ffff 100%);
+  padding: 20px 0;
+}

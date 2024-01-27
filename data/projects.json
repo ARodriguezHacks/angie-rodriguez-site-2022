@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Magic Pong",
+    "description": "Classic Pong game built with plain HTML, CSS and JavaScript",
+    "githubURL": "https://github.com/ARodriguezHacks/magicpong",
+    "image": "/images/magicpong.png",
+    "demoURL": "https://magic-pong.netlify.app/"
+  },
+  {
+    "name": "SpeedySpanish Quiz",
+    "description": "Spanish Quiz App built with React Hooks",
+    "githubURL": "https://github.com/ARodriguezHacks/speedy-spanish-quiz",
+    "image": "/images/speedyspanish.png",
+    "demoURL": "https://speedyspanishquiz.netlify.app/"
+  }
+]

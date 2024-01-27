@@ -1,0 +1,30 @@
+.aboutFlexContainer {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+
+  .aboutCopy {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .aboutProfileImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    @media (min-width: 768px) {
+      padding: 20px;
+      flex: 0 0 45%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}

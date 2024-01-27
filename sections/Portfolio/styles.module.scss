@@ -1,0 +1,41 @@
+.portfolio {
+  .sectionPortfolioFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @media (min-width: 1440px) {
+      flex-direction: row;
+    }
+
+    .portfolioCopy {
+      margin-bottom: 10px;
+
+      @media (min-width: 1440px) {
+        width: 40%;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .sectionProjectHeight {
+    min-height: 75vh;
+    @media (min-width: 768px) {
+      min-height: 100vh;
+      margin: 40px 0;
+    }
+  }
+
+  .imageContainer {
+    position: relative;
+
+    @media (min-width: 1200px) {
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    @media (min-width: 1440px) {
+      width: 70%;
+    }
+  }
+}
