@@ -12,20 +12,23 @@ export default function Portfolio() {
             <div className={ `${portfolioStyles.portfolioCopy}` }>
               <h3>{ dataItem.name }</h3>
               <p>{ dataItem.description }</p>
+              <a href={ dataItem.githubURL }>View Github Repo</a>
             </div>
             <div className={ ` ${portfolioStyles.imageContainer}` } >
-              <Image
-                src={ dataItem.image }
-                alt={ dataItem.description }
-                width={ 300 }
-                height={ 300 }
-                sizes="200vw"
-                style={ {
-                  boxShadow: '10px 10px 10px gray',
-                  width: '100%',
-                  height: 'auto',
-                } }
-              />
+              <a href={ dataItem.demoURL } target="_blank" title="Go to live demo">
+                <Image
+                  src={ dataItem.image }
+                  alt={ dataItem.description }
+                  width={ 300 }
+                  height={ 300 }
+                  sizes="200vw"
+                  style={ {
+                    boxShadow: '10px 10px 10px gray',
+                    width: '100%',
+                    height: 'auto',
+                  } }
+                />
+              </a>
             </div>
           </div>
         )) }

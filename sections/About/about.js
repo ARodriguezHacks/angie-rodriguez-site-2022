@@ -25,16 +25,16 @@ export default function About() {
               />
             </div>
           </div>
-          <button>
+          {/* <button>
             <Link href="/about">Read more about my journey</Link>
-          </button>
+          </button> */}
         </div>
         <div className={aboutStyles.aboutCopy}>
           <p>Personal Timeline:</p>
           <Timeline />
-          <button>
+          {/* <button>
             <Link href="/about">Read more about my journey</Link>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

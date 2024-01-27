@@ -13,7 +13,7 @@ export default function Main() {
         <About styles={styles.about} />
         <Portfolio styles={styles.portfolio} />
         <Github styles={styles.github} />
-        <LinkedIn styles={styles.github} />
+        {/* <LinkedIn styles={styles.github} /> */}
       </section>
     </main>
   );

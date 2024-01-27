@@ -11,17 +11,17 @@ export default function Footer() {
             Github
           </a></li>
           <li><a
-            href="https://github.com/ARodriguezHacks"
+            href="https://www.linkedin.com/in/angierodriguezdev/"
           >
             LinkedIn
           </a></li>
-          <li><a
+          {/* <li><a
             href="https://www.linkedin.com/in/angierodriguezdev/"
           >
             Substack
-          </a></li>
+          </a></li> */}
           <li><a
-            href="https://github.com/ARodriguezHacks"
+            href="https://dev.to/arodriguezhacks"
           >
             DEV.to
           </a></li>

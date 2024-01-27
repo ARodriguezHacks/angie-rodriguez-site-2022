@@ -10,7 +10,7 @@
     content: "";
     position: absolute;
     width: 6px;
-    background-color: #a5a1eb;
+    background-color:  #ff7ff4;
     top: 15px;
     bottom: 15px;
     margin-left: -7px;
@@ -28,8 +28,8 @@
     width: 25px;
     height: 25px;
     left: -16px;
-    background-color: #21d4fe;
-    border: 4px solid #21d4fe;
+    background-color: #21fee4;
+    border: 4px solid #21fee4;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -39,7 +39,7 @@
 // Hero Section Layout
 
 .header {
-  background-color: aquamarine;
+  background-color: #ff7ff4;
 }
 
 // Navigation component?.
@@ -49,6 +49,18 @@
 
   .navList {
     display: none;
+  }
+
+  .navListLogo {
+    ul {
+      @media (max-width: 767px) {
+        padding-left: 0
+      }
+
+      li.buttonLogo {
+        padding: 0;
+      }
+    }
   }
 
   .desktopNavListOpened {
@@ -67,6 +79,15 @@
         padding: 0.5rem 0;
       }
     }
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
   }
 }
 

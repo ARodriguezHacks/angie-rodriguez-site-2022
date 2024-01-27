@@ -42,7 +42,8 @@ export default function Github() {
                   <h3>Project: { dataItem.name }</h3>
                   <p>Description: { dataItem.description ?? 'A project in the works'}</p>
                   {dataItem.language ? <p>Languages: { dataItem.language}</p> : null}
-                  {dataItem.homepage ? <p>Homepage: { dataItem.homepage}</p> : null}
+                  {dataItem.homepage ? <p>Homepage: <a href={ dataItem.homepage}>{ dataItem.homepage}</a></p> : null}
+                  <a href={dataItem.clone_url}>View Git Repo</a>
                 </div>
             </div>
           )) }
