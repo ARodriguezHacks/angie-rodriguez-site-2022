@@ -68,6 +68,9 @@ export default function Navigation() {
             <li>
               <Link href="#github">Github</Link>
             </li>
+            <li>
+              <Link href="/blog">Blog</Link>
+            </li>
           </ul>
         </div>
       </nav>
