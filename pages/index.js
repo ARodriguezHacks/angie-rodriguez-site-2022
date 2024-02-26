@@ -1,6 +1,16 @@
 import Head from "next/head";
 import Main from "../components/Main";
 import Footer from "../components/Footer/Footer";
+// import { getSortedPostsData } from '../lib/posts';
+
+// export async function getStaticProps() {
+//   const posts = getSortedPostsData();
+//   return {
+//     props: {
+//       posts,
+//     },
+//   };
+// }
 
 export default function Home() {
   return (

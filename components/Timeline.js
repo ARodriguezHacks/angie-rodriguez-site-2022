@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.scss";
 
-export default function Timeline({ events }) {
+export default function Timeline() {
   return (
     <div className={styles.timeline}>
       <div className={styles.timelineContainer}>

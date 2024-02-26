@@ -1,11 +1,12 @@
 ---
-title: 'The Rust(y) Programming Path'
-date: '2024-02-07'
+title: "The Rust(y) Programming Path"
+date: "2024-02-07"
 ---
 
 With tons of programming languages to choose from, it's difficult to decide why choose one over the others.
 
 What motivates us?
+
 - Social media and industry hype?
 - Fear Of Missing Out? (FOMO)
 - Feeling like you HAVE to learn that particular language
@@ -19,7 +20,9 @@ And yet...my actual Main reason for learning Rust is because I have an extra inc
 
 This Rust co-hort is an endeavor within the VirtualCoffee commmunity of developers and tech enthusiasts. I discovered the group a month after my layoff in July 2023 and it's definitely been one of the better communities I've found since becoming a developer in 2019.
 
-Resources:
+---
+
+## Resources:
 
 [VirtualCoffee website](https://virtualcoffee.io/)
 
