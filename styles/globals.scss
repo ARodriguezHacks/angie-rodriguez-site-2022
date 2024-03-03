@@ -5,10 +5,21 @@
   box-sizing: border-box;
   font-family: variables.$font-fira-sans, sans-serif;
   scroll-behavior: smooth;
+  color: #585252;
 
   p,
   li {
     font-size: 22px;
+  }
+
+  a {
+    color: turquoise;
+    text-decoration: none;
+    transition: color 1s;
+
+    &:hover {
+      color: magenta;
+    }
   }
 }
 

@@ -2,7 +2,7 @@ import aboutStyles from "./styles.module.scss"
 import Link from "next/link";
 import Image from "next/image";
 import Timeline from "../../components/Timeline"
-import profilePic from "../../public/images/AngieR_profile_min_2.png";
+import profilePic from "../../public/images/kitties.png";
 
 export default function About() {
   return (
@@ -21,7 +21,7 @@ export default function About() {
                 alt="Angie Rodriguez profile pic"
                 width={300}
                 height={300}
-                style={{ boxShadow: '10px 10px 10px gray' }}
+                style={{ boxShadow: '10px 10px 10px gray', borderRadius: '20px' }}
               />
             </div>
           </div>
