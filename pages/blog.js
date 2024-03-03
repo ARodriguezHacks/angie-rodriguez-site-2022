@@ -14,23 +14,22 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ posts }) {
-  // console.log(props)
   return (
-    <div className={ styles.container }>
-      <section className={ styles.about }>
-        <h1>My Blog</h1>
+    <div className={ `sectionFlex sectionHeight sectionMargin` } id="blog">
+      <section>
+        <h2 className={ `headingOne` }>My Blog</h2>
         <p>
           I&apos;ve been a front end developer for over 3 years, professionally. I
           enjoy web development and am excited to keep learning more about
           software engineering.
         </p>
-      </section>
-      <ul>
+        <ul>
         { posts.map((post) => (
           <li key={ post.id }><Link href={ `/blog/${post.id}` }>{ post.title }</Link><br />
             <small><BlogDate dateString={ post.date } /></small></li>
         )) }
       </ul>
+      </section>
     </div>
   );
 }
