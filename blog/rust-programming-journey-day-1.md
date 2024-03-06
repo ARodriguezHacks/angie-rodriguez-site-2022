@@ -4,22 +4,63 @@ title: "The Rust(y) Programming Path"
 date: "2024-02-07"
 ---
 
-With tons of programming languages to choose from, it's difficult to decide why choose one over the others.
+# Learning Rust
 
-What motivates us?
+My journey to learn Rust started in February 2024 (a month ago, at the time of writing this). One of my Slack groups introduced the idea of creating a Rust learning cohort for anyone interested and I signed up without hesitation. My desire to participate stemmed from a couple of observations:
 
-- Social media and industry hype?
-- Fear Of Missing Out? (FOMO)
-- Feeling like you HAVE to learn that particular language
-- And many more...
+- My craving for the cohort learning experience that I missed out on during my coding bootcamp days
+- Having a tangible reason to grow within this new Slack community I joined right after my layoff in July 2023 and thirdly
+- Accountability. I’ve started and stopped learning various topics in software engineering, all of which I *am* fascinated by, but the issue starts to be that by pivoting too much or too quickly you risk becoming an irresponsible learner. You don’t allow yourself to fully absorb the fundamentals or that’s all you know and aren’t able to face challenges in any domain.
 
-I usually base my decisions on longevity and what I encountered from reading job descriptions.
+Speaking of challenges, the real reason for continuing with the Rust learning is to challenge myself in mastering more programming languages. In the age of AI and competing with tons of folks transitioning into tech careers, standing out is always at the top of my mind, but it helps that I genuinely have an interest in understanding how technology works.
 
-And yet...my actual Main reason for learning Rust is because I have an extra incentive to learn it. That incentive is being part of group of learners who have also decided to take the leap and start this Rust learning journey. It was the extra push to decide which programming languge to learn next.
+Going back to Rust, while setting up a couple of Github repos for this fun cohort, it dawned on me that Rust may not be like any other programming language I’ve come across yet. This was especially obvious after completing the [Programming A Guessing Game chapter](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html) from the Rust Lang book when my thoughts consisted of
 
-(As of late 2023, I'm also learning TypeScript and Python)
+“I’m in for a rollercoaster with the Rust language”
 
-This Rust co-hort is an endeavor within the VirtualCoffee commmunity of developers and tech enthusiasts. I discovered the group a month after my layoff in July 2023 and it's definitely been one of the better communities I've found since becoming a developer in 2019.
+“Do I even program?
+
+Can I even call myself a software engineer?”
+
+Hopefully I’ll re-read this post before end of the 2024 and the answer to that will be a definitive YES
+
+Rust is a programming language that I’d only heard about starting late 2023. It’s described as a ‘general purpose language’ meaning it’s range is far-reaching, from addressing systems-level conflicts( for instance, memory management) to creating Command Line Interfaces (CLIs) and web servers.
+
+For me personally, all Rust means is that the learning curve just suddenly got tighter, like a tightly wound coil. Let’s just say I won’t be using Rust anytime soon for my Data Structures and Algorithms study.
+
+Installing Rust on my Lenovo Desktop was super straightforward:
+
+Other specs:
+
+Operating System (OS): Windows Subsystem for Linux (WSL)
+
+1. Install Rust via the following command for Linux/Mac
+
+```bash
+$ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+```
+
+1. After Rust is successfully installed, I ran this command to update to the latest Rust version
+
+```bash
+$ rustup update
+```
+
+Installation is taken from the Rust-lang book and it’s one of the many many resources I find myself using during this cohort. My next challenge will be how to keep track and organized of everything I’m learning, including non-Rust topics.
+
+Till then, hasta la proxima
+
+Angie
+
+---
+
+Resources
+
+https://doc.rust-lang.org/book/title-page.html
+
+https://rustlings.cool/
+
+https://www.youtube.com/watch?v=G3Vr-yswlaU&t=336s
 
 ---
 
