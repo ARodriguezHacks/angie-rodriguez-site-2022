@@ -1,4 +1,3 @@
-import styles from "../styles/Home.module.scss";
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import BlogDate from '../components/Date'
@@ -14,17 +13,19 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ posts }) {
+  // console.log(posts)
   return (
     <div className={ `sectionFlex sectionHeight sectionMargin` } id="blog">
       <section>
         <h2 className={ `headingOne` }>My Blog</h2>
-        {/* <p>
-          My musings.
-        </p> */}
+        <p>
+          My musings...
+        </p>
         <ul>
         { posts.map((post) => (
-          <li key={ post.id }><Link href={ `/blog/${post.id}` }>{ post.title }</Link><br />
-            <small><BlogDate dateString={ post.date } /></small></li>
+          <div key={ post.slug }>
+          <li><Link href={ `/blog/${post.slug}` }>{ post.title }</Link><br />
+            <small><BlogDate dateString={ post.date } /></small></li></div>
         )) }
       </ul>
       </section>
