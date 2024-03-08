@@ -1,17 +1,22 @@
 .footer {
-  background-color: rgb(255, 127, 244);
+  background-color: hsl(225, 98%, 21%);
+  min-height: 25vh;
+  color: #e0d7d7;
 }
 
 .footerNav {
-  padding: 10px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
 
   ul.navList {
     display: flex;
+    width: 45%;
     flex-direction: row;
     list-style: none;
     padding: 0;
     justify-content: space-around;
-    align-items: center;
+    // align-items: center;
     height: inherit;
   }
 }
@@ -20,6 +25,5 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(to bottom, #ff7ff4 0%, #00ffff 100%);
   padding: 20px 0;
 }

@@ -22,7 +22,7 @@ export default function Hero() {
             alt="Angie Rodriguez profile pic"
             width={ 300 }
             height={ 300 }
-            style={ { boxShadow: '10px 10px 10px gray' } }
+            style={ { boxShadow: '10px 10px 10px gray', borderRadius: '20px' } }
           />
         </div>
       </div>

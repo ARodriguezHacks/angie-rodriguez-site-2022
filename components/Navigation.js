@@ -60,13 +60,16 @@ export default function Navigation() {
         >
           <ul>
             <li>
-              <Link href="#about">About Me</Link>
+              <Link href="/about">About Me</Link>
             </li>
             <li>
-              <Link href="#portfolio">Portfolio</Link>
+              <Link href="/portfolio">Portfolio</Link>
             </li>
             <li>
-              <Link href="#github">Github</Link>
+              <Link href="/github">Github</Link>
+            </li>
+            <li>
+              <Link href="/blog">Blog</Link>
             </li>
           </ul>
         </div>

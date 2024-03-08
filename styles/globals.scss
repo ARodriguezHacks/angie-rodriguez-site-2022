@@ -1,13 +1,25 @@
 @use "./abstracts/variables";
+// @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 :root {
   box-sizing: border-box;
   font-family: variables.$font-fira-sans, sans-serif;
   scroll-behavior: smooth;
+  color: #585252;
 
   p,
   li {
     font-size: 22px;
+  }
+
+  a {
+    color: turquoise;
+    text-decoration: none;
+    transition: color 1s;
+
+    &:hover {
+      color: magenta;
+    }
   }
 }
 
@@ -24,6 +36,25 @@
 }
 .heroParagraph {
   font-size: variables.$hero-paragraph;
+}
+
+// Blog styles
+.blog {
+  font-family: variables.$eb-garamond-serif;
+  padding: 20px;
+  max-width: 66%;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .blog-contents-container {
+    > * {
+      margin-bottom: 20px;
+      line-height: 34px;
+    }
+  }
 }
 
 // Section styles

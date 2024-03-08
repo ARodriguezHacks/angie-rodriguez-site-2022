@@ -1,17 +1,38 @@
-/* eslint-disable react/no-unescaped-entities */
-import styles from "../styles/Home.module.scss";
+import Image from "next/image";
+import portfolioStyles from "../sections/Portfolio/styles.module.scss"
+import projectData from "../data/projects.json"
 
 export default function Portfolio() {
   return (
-    <div className={styles.container}>
-      <section className={styles.about}>
-        <h1>My Portfolio</h1>
-        <p>
-          I've been a front end developer for over 1 year, professionally. I
-          enjoy web development and am excited to keep learning more about
-          software engineering.
-        </p>
-      </section>
+    <div className={ `sectionFlex sectionHeight ${portfolioStyles.portfolio} sectionMargin` } id="portfolio">
+      <div>
+        <h2 className={ `headingOne` }>My Favorite Projects</h2>
+        { projectData.map(dataItem => (
+          <div key={ dataItem.name } className={ `${portfolioStyles.sectionPortfolioFlex} ${portfolioStyles.sectionProjectHeight}` }>
+            <div className={ `${portfolioStyles.portfolioCopy}` }>
+              <h3>{ dataItem.name }</h3>
+              <p>{ dataItem.description }</p>
+              <a href={ dataItem.githubURL }>View Github Repo</a>
+            </div>
+            <div className={ ` ${portfolioStyles.imageContainer}` } >
+              <a href={ dataItem.demoURL } target="_blank" title="Go to live demo">
+                <Image
+                  src={ dataItem.image }
+                  alt={ dataItem.description }
+                  width={ 300 }
+                  height={ 300 }
+                  sizes="200vw"
+                  style={ {
+                    boxShadow: '10px 10px 10px gray',
+                    width: '100%',
+                    height: 'auto',
+                  } }
+                />
+              </a>
+            </div>
+          </div>
+        )) }
+      </div>
     </div>
   );
 }
