@@ -13,7 +13,6 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ posts }) {
-  // console.log(posts)
   return (
     <div className={ `sectionFlex sectionHeight sectionMargin` } id="blog">
       <section>

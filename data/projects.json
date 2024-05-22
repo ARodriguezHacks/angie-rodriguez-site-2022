@@ -1,5 +1,22 @@
 [
   {
+    "name": "GLS Funding",
+    "description": "Client project. New website for Gold Leaf Servicing",
+    "image": "/images/GLSdesktop.png",
+    "demoURL": "https://glsfunding.com/",
+    "video": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGM2eHhhMXFibjV4bGY1MW55andlODF1ajZmMTVpd2w5NjdqNnVpNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SLtMvRshqke6fDYYIi/giphy.gif",
+    "clientProject": "true"
+  },
+    {
+    "name": "Le Magasin Shop",
+    "description": "E-Commerce MERN project with sandbox Paypal integration and Material UI styling",
+    "githubURL": "https://github.com/ARodriguezHacks/le-magasin-shop",
+    "image": "/images/lemagasinproject.png",
+    "demoURL": "https://le-magasin-shop.onrender.com/",
+    "video": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExem1kZ2RzYzQwM3BsM3M5b3I3cGVvaGFiMXo4NTdudWVhbTh3Y21uYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KKmXMblFCmx7YkOHEz/giphy.gif",
+    "clientProject": "false"
+  },
+  {
     "name": "Magic Pong",
     "description": "Classic Pong game built with plain HTML, CSS and JavaScript",
     "githubURL": "https://github.com/ARodriguezHacks/magicpong",
@@ -14,24 +31,5 @@
     "image": "/images/speedyspanish.png",
     "demoURL": "https://speedyspanishquiz.netlify.app/",
     "clientProject": "false"
-  }
-  ,
-  {
-    "name": "Le Magasin Shop",
-    "description": "E-Commerce MERN project with sandbox Paypal integration and Material UI styling",
-    "githubURL": "https://github.com/ARodriguezHacks/le-magasin-shop",
-    "image": "/images/lemagasinproject.png",
-    "demoURL": "https://le-magasin-shop.onrender.com/",
-    "video": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExem1kZ2RzYzQwM3BsM3M5b3I3cGVvaGFiMXo4NTdudWVhbTh3Y21uYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KKmXMblFCmx7YkOHEz/giphy.gif",
-    "clientProject": "false"
-  }
-  ,
-  {
-    "name": "GLS Funding",
-    "description": "Client project. New website for Gold Leaf Servicing",
-    "image": "/images/GLSdesktop.png",
-    "demoURL": "https://glsfunding.com/",
-    "video": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGM2eHhhMXFibjV4bGY1MW55andlODF1ajZmMTVpd2w5NjdqNnVpNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SLtMvRshqke6fDYYIi/giphy.gif",
-    "clientProject": "true"
   }
 ]
